@@ -1,0 +1,68 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<!-- INTRODUCTION -->
+<section id="home" class="introduction-container">
+
+    <div class="intro-content-layout">
+        <!-- PARAGRAPHS -->
+        <div style="display: grid; gap: 10px">
+            <h5 style="margin: 0">
+                We build systems that move data with precision, ensuring precise functionalities and problem-solving.
+            </h5>
+            <p style="margin: 0">
+                From the user interface to the core application logic and down into the backend infrastructure, our work focuses on designing pipelines that behave predictably, scale under load, and fail gracefully.
+            </p>
+        </div>
+
+        <!-- FLOW -->
+        <div class="flow-rows-container">
+
+            <!-- USER -->
+            <div class="flow-row">
+                <!-- icon & title -->
+                <nav class="flow-title-container">
+                    <img class="flow-title-icon" src="./static/images/icons/interface/user.png" alt="User Profile Icon"/>
+                    <span class="flow-title">User</span>
+                </nav>
+                <span class="flow-body">
+                    Interaction layer. Input capture, session handling, and event flow.
+                </span>
+            </div>
+
+            <span class="flow-branch"></span>
+
+            <!-- APPLICATION -->
+            <div class="flow-row">
+                <!-- icon & title -->
+                <nav class="flow-title-container">
+                    <img class="flow-title-icon" src="./static/images/icons/interface/application.png" alt="User Profile Icon"/>
+                    <span class="flow-title">Application</span>
+                </nav>
+                <span class="flow-body">
+                    Business logic, orchestration, validation, and service coordination.
+                </span>
+            </div>
+
+            <span class="flow-branch"></span>
+
+            <!-- BACKEND -->
+            <div class="flow-row">
+                <!-- icon & title -->
+                <nav class="flow-title-container">
+                    <img class="flow-title-icon" src="./static/images/icons/interface/backend.png" alt="User Profile Icon"/>
+                    <span class="flow-title">Backend</span>
+                </nav>
+                <span class="flow-body">
+                    Persistent storage, distributed services, automated processes, and secure data flow.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION_BREAK -->
+    <span style="width: 100%; height: 0; border-bottom: 1px solid var(--border-color); margin-top: 100px"></span>
+</section>
+
+{% endblock %}
