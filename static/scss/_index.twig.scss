@@ -5,8 +5,6 @@
     display: grid;
     grid-template-rows: auto max-content;
     justify-items: center;
-    margin-right: $desktop-margin;
-    margin-left: $desktop-margin;
     background-image: url("../images/introduction_bg_image.png");
     background-position: bottom;
     background-size: contain;
@@ -80,4 +78,66 @@
     height: 30px;
     width: 0.5px;
     background-color: var(--border-color);
+}
+
+
+.section-title-container {
+    display: grid;
+    gap: 20px;
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+/* TITLE */
+.section-title-container h5 {
+    font-size: 28px;
+    font-weight: normal;
+    font-family: Roboto-Medium, sans-serif;
+    margin: 0;
+}
+/* PARAGRAPH */
+.section-title-container p {
+    max-width: 550px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+    margin: 0;
+}
+
+
+/* SERVICES */
+.services-container {
+
+}
+.services-layout {
+    display: grid;
+    grid-template-columns: 100fr 100fr;
+    gap: 30px;
+}
+.service-container {
+    display: grid;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    gap: 5px;
+}
+.service-title-container {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 100fr max-content;
+    height: 30px;
+}
+.service-title-container h5 {
+    font-size: var(--content-font-size);
+    font-weight: normal;
+    font-family: Roboto-Bold, sans-serif;
+    margin: 0;
+}
+.service-title-container img {
+    width: 25px;
+}
+.service-description {
+    font-size: var(--content-font-size);
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+    margin: 0;
 }

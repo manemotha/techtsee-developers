@@ -62,7 +62,41 @@
     </div>
 
     <!-- SECTION_BREAK -->
-    <span style="width: 100%; height: 0; border-bottom: 1px solid var(--border-color); margin-top: 100px"></span>
+    <nav style="width: 100%; height: 0; border-bottom: 1px solid var(--border-color); margin-top: 100px"></nav>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-container">
+
+    <!-- SECTION TITLE -->
+    <div class="section-title-container">
+        <h5>Services We Deliver</h5>
+        <p>
+            We deliver engineering services built around clarity, reliability, and precise execution. Each solution is designed as part of a larger system—optimized for performance, security, and long-term stability.
+        </p>
+    </div>
+
+    <!-- SERVICES ITEMS -->
+    <div class="services-layout">
+
+        <!-- TWIG FOR-LOOP -->
+        {% for service in SERVICES_WE_DELIVER %}
+        <div class="service-container">
+            <!-- title -->
+            <div class="service-title-container">
+                <h5>{{service.title}}</h5>
+                <img src="./static/images/icons/interface/{{service.icon}}" alt="Interface Icon"/>
+            </div>
+            <!-- description -->
+            <p class="service-description">
+                {{service.description}}
+            </p>
+        </div>
+        {% endfor %}
+
+    </div>
+    <!-- SECTION_BREAK -->
+    <nav style="width: 100%; height: 0; border-bottom: 1px solid var(--border-color); margin-top: 100px"></nav>
 </section>
 
 {% endblock %}
