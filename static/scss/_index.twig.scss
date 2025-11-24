@@ -142,3 +142,64 @@
     line-height: 1.5;
     margin: 0;
 }
+
+
+/* PACKAGES */
+.packages-title-tools-layout {
+    display: grid;
+    grid-template-columns: 100fr 100fr;
+    align-content: center;
+    gap: 30px;
+    padding: 100px 0 60px 0;
+}
+.tools-icons-layout {
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr 100fr;
+    min-width: 400px;
+    max-width: 600px;
+    filter: saturate(0);
+    align-content: center;
+    opacity: 0.5;
+    row-gap: 20px;
+}
+.tool-icon {
+    width: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+.packages-layout {
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr;
+    column-gap: 30px;
+    row-gap: 80px;
+}
+.package-container {
+    display: grid;
+    background-color: white;
+    overflow: hidden;
+    grid-template-rows: 50px 100fr;
+    gap: 20px;
+}
+.package-title-container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+.package-title {
+    font-size: var(--title-font-size);
+    font-weight: normal;
+    color: white;
+    margin: 0;
+}
+.package-service-container {
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: min-content;
+}
+.package-service-item {
+    font-size: var(--content-font-size);
+    margin: 0;
+}

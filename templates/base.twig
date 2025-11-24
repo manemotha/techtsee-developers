@@ -23,8 +23,8 @@
         <div class="navbar-buttons-layout">
             <a href="#home" id="home-button" class="navbar-button">Home</a>
             <a href="#services" id="services-button" class="navbar-button">Services</a>
-            <a href="#packages-button" id="packages-button" class="navbar-button">Packages</a>
-            <a href="#contact-button" id="contact-button" class="navbar-button">Contact</a>
+            <a href="#packages" id="packages-button" class="navbar-button">Packages</a>
+            <a href="#contact" id="contact-button" class="navbar-button">Contact</a>
         </div>
     </div>
 
@@ -67,6 +67,7 @@
     // Sections to observe
     const homeSection = document.getElementById("home");
     const servicesSection = document.getElementById("services");
+    const packagesSection = document.getElementById("packages");
 
     // Navigation Buttons
     const homeButton = document.getElementById("home-button");
@@ -89,6 +90,11 @@
           packagesButton.classList.remove("selected-navbar-button");
           contactButton.classList.remove("selected-navbar-button");
           servicesButton.classList.add("selected-navbar-button");
+        } else if (entry.target.id === "packages") {
+          homeButton.classList.remove("selected-navbar-button");
+          servicesButton.classList.remove("selected-navbar-button");
+          contactButton.classList.remove("selected-navbar-button");
+          packagesButton.classList.add("selected-navbar-button");
         }
       }
     });
@@ -99,8 +105,9 @@
     );
 
     // Start observing the sections
-    observer.observe(servicesSection);
     observer.observe(homeSection);
+    observer.observe(servicesSection);
+    observer.observe(packagesSection);
 </script>
 
 </body>
