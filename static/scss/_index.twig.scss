@@ -52,7 +52,8 @@
     padding: 15px 60px 15px 60px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    background-color: white;
+    background-color: #FFFFFFAA;
+    backdrop-filter: blur(10px);
 }
 .flow-title-container {
     display: flex;
@@ -101,6 +102,15 @@
     font-size: var(--content-font-size);
     color: var(--secondary-text-color);
     margin: 0;
+}
+
+
+/* SECTION BREAK */
+.section-break {
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 100px;
 }
 
 
@@ -248,4 +258,89 @@
     cursor: pointer;
     background-color: var(--primary-color);
     color: white;
+}
+
+
+/* MOBILE MEDIA QUERIES */
+@media (max-width: #{$mobile-screen-width}) {
+
+    .section-title-container {
+        justify-items: center;
+        padding-top: 50px;
+    }
+    .section-title-container h5,
+    .section-title-container p {
+        text-align: center;
+    }
+
+    /* INTRODUCTION */
+    .introduction-container {
+        margin: 100px #{$mobile-margin} 60px #{$mobile-margin};
+    }
+    .intro-content-layout {
+        grid-template-columns: auto;
+        justify-items: center;
+        gap: 50px;
+    }
+    .intro-content-layout h5,
+    .intro-content-layout p {
+        text-align: center;
+    }
+
+    .intro-image {
+        width: 300px;
+    }
+    .flow-row {
+        width: auto;
+    }
+
+    /* SERVICES */
+    .services-container {
+        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
+    }
+    .services-layout {
+        grid-template-columns: 100fr;
+    }
+
+    /* PACKAGES */
+    .packages-container {
+        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
+    }
+    .packages-layout {
+        grid-template-columns: 100fr;
+        row-gap: 50px;
+    }
+    .packages-title-tools-layout {
+        grid-template-columns: 100fr;
+        row-gap: 30px;
+    }
+    .package-title, .package-title-container {
+        background-color: transparent;
+        color: var(--primary-color);
+        font-size: 28px;
+        font-family: Roboto-Bold, sans-serif;
+        justify-content: center;
+    }
+    .package-service-item {
+        text-align: center;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
+        grid-template-columns: 100fr;
+        gap: 30px;
+    }
+    .contact-container img {
+    }
+    .tools-icons-layout {
+        grid-template-columns: 100fr 100fr 100fr 100fr;
+        max-width: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        row-gap: 30px;
+    }
+    .contact-form {
+        max-width: none;
+    }
 }

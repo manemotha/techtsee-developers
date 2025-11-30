@@ -53,3 +53,28 @@
 .social-link-icon {
   width: 25px;
 }
+
+
+/* MOBILE MEDIA QUERIES */
+@media (max-width: #{$mobile-screen-width}) {
+
+    html, body {
+        min-width: 400px;
+    }
+
+    .navbar-layout {
+        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
+    }
+    .navbar-buttons-layout {
+        display: none;
+    }
+    .trademark {
+        justify-self: center;
+    }
+
+    /* FOOTER */
+    #footer-container {
+        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
+        gap: 50px;
+    }
+}
