@@ -329,9 +329,14 @@
 
     /* CONTACT */
     .contact-container {
-        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
+        margin: 0;
         grid-template-columns: 100fr;
         gap: 30px;
+    }
+    .contact-container div {
+        display: grid;
+        grid-template-columns: 100fr;
+        margin: 0 #{$mobile-margin} 0 #{$mobile-margin};
     }
     .contact-container img {
     }
